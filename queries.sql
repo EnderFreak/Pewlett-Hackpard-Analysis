@@ -152,7 +152,7 @@ SELECT ri.emp_no,
 		ri.first_name,
 		ri.last_name,
 		d.dept_name
---INTO sales_retirees
+INTO sales_retirees
 FROM retirement_info AS ri
 	INNER JOIN dept_emp AS de
 		ON (ri.emp_no = de.emp_no)
@@ -165,7 +165,7 @@ SELECT ri.emp_no,
 		ri.first_name,
 		ri.last_name,
 		d.dept_name
---INTO sales_retirees
+INTO sales_retirees
 FROM retirement_info AS ri
 	INNER JOIN dept_emp AS de
 		ON (ri.emp_no = de.emp_no)
@@ -173,14 +173,3 @@ FROM retirement_info AS ri
 		ON (de.dept_no = d.dept_no)
 WHERE (de.dept_no = 'd007' OR de.dept_no = 'd005');
 --can also use WHERE de.dept_no IN ('d007', 'd005');
-
-
-
-
-
-
-
-
-
-
-
